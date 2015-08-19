@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cqupt.SafeInsole"
+    android:versionCode="3"
+    android:versionName="2.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <!-- 按时required为true时，则应用只能在支持BLE的Android设备上安装运行； -->
+    <!-- required为false时，Android设备均可正常安装运行， -->
+    <!-- 需要在代码运行时判断设备是否支持BLE feature： -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 添加屏幕支持 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问精确位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 访问网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问WIFI网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 改变WIFI网络状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 读写存储卡的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取电话状态的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 发送短信的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <!-- android:theme="@android:style/Theme.Holo.Light" -->
+        <!-- Theme.Holo.Light -->
+        <activity
+            android:name="com.cqupt.SafeInsole.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cqupt.SafeInsole.Palygif1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/title_bg" >
+        </activity>
+        <activity
+            android:name="com.cqupt.SafeInsole.MainActivity"
+            android:label="@string/title_activity_add_exam"
+            android:theme="@style/title_bg" >
+        </activity>
+        <activity
+            android:name="com.cqupt.SafeInsole.SuccinctHelpActitvty"
+            android:label="@string/title_activity_add_exam"
+            android:theme="@style/title_bg" >
+        </activity>
+        <activity
+            android:name="com.cqupt.SafeInsole.SafeActivity"
+            android:label="@string/title_activity_add_exam"
+            android:theme="@style/title_bg" >
+        </activity>
+        <activity
+            android:name="com.cqupt.SafeInsole.FallActivity"
+            android:label="@string/title_activity_add_exam"
+            android:theme="@style/title_bg" >
+        </activity>
+        <activity
+            android:name="com.cqupt.SafeInsole.SetActivity"
+            android:label="@string/title_activity_add_exam"
+            android:theme="@style/title_bg" >
+        </activity>
+        <activity
+            android:name="com.cqupt.SafeInsole.HelpActivity"
+            android:label="@string/title_activity_add_exam"
+            android:theme="@style/title_bg" >
+        </activity>
+    </application>
+
+</manifest>

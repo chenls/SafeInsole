@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/StudioProjects/安全鞋垫/app/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <color name="blue">#5661b0</color>
+    <color name="green">#009944</color>
+    <color name="grey">#8b8484</color>
+    <color name="home_bg">#dadada</color>
+    <color name="integral_color">#044acb</color>
+    <color name="key_color">#4a4a4a</color>
+    <color name="list_color1">#dadada</color>
+    <color name="list_color2">#afafaf</color>
+    <color name="name_color">#000000</color>
+    <color name="red">#a62424</color>
+    <color name="size_color">#000000</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_makered">#ff0000</color>
+    <color name="text_red">#de0000</color>
+    <color name="white">#ffffff</color>
+    <!-- From: file:/E:/StudioProjects/安全鞋垫/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <!-- From: file:/E:/StudioProjects/安全鞋垫/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">安全鞋垫</string>
+    <string name="button">点击保存</string>
+    <string name="content">预设短信:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help">\t“安全鞋垫”是由低功耗蓝牙芯片、加速度传感器、压力传感器、安卓手机客户端等组成的智能报警系统。主要有计步、安全报警、跌倒报警三大功能。\n\t①计步：连接BLE设备后，会自动获取计步信息，并根据使用者设置的个人信息计算消耗的卡路里。\n\t②安全报警：安全开关打开后，使用者遇到危险时，可以脚趾使劲按压鞋垫3秒钟触发报警，手机会自动获取位置和预设短信信息延时10秒后报警。同时手机产生震动提示使用者，此时使用者可选择取消报警。\n\t③跌倒报警：跌倒开关打开后，使用者跌倒时，手机会自动获取位置和预设短信信息延时10秒后报警。同时手机产生震动提示使用者，此时使用者可选择取消报警。</string>
+    <string name="number">手机号码:</string>
+    <string name="success">发送完成</string>
+    <string name="title_activity_add_exam">安全鞋垫</string>
+    <string name="title_step">计步</string>
+    <!-- From: file:/E:/StudioProjects/安全鞋垫/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+    <style name="title_bg" parent="android:Theme.Light">
+      <item name="android:windowTitleBackgroundStyle">@style/windowTitleBackgroundStyle</item>
+      <item name="android:windowTitleStyle">@style/windowTitleStyle</item>
+      <!-- Window Header Height -->
+      <item name="android:windowTitleSize">50dp</item>
+  </style>
+    <style name="windowTitleBackgroundStyle">
+      <item name="android:background">#4BD6F9</item>
+      </style>
+    <style name="windowTitleStyle">
+      <item name="android:textColor">#ffffff</item>
+      </style>
+</resources>
