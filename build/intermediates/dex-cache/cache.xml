@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="E:\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="E:\StudioProjects\安全鞋垫\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-5fb90e3b6d9c4b934ccd45d50d51fbe8ab3bdf23.jar" />
-    </item>
-    <item
         jar="E:\StudioProjects\安全鞋垫\app\libs\baidumapapi.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -21,6 +14,13 @@
         revision="22.0.1"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0">
         <dex dex="E:\StudioProjects\安全鞋垫\app\build\intermediates\pre-dexed\debug\classes-c0815c2d6ffefbde8851f774fccf369f231af2e8.jar" />
+    </item>
+    <item
+        jar="E:\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="E:\StudioProjects\安全鞋垫\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-5fb90e3b6d9c4b934ccd45d50d51fbe8ab3bdf23.jar" />
     </item>
     <item
         jar="E:\StudioProjects\安全鞋垫\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cqupt.SafeInsole"
     android:versionCode="3"
-    android:versionName="2.1.1" >
+    android:versionName="2.1.1">
 
     <!-- 按时required为true时，则应用只能在支持BLE的Android设备上安装运行； -->
     <!-- required为false时，Android设备均可正常安装运行， -->
@@ -47,55 +47,27 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
-
-        <!-- android:theme="@android:style/Theme.Holo.Light" -->
-        <!-- Theme.Holo.Light -->
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
         <activity
             android:name="com.cqupt.SafeInsole.WelcomeActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.cqupt.SafeInsole.Palygif1Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.MainActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.SuccinctHelpActitvty"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.SafeActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.FallActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.SetActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.HelpActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.cqupt.SafeInsole.MainActivity"></activity>
+        <activity android:name="com.cqupt.SafeInsole.SuccinctHelpActitvty"></activity>
+        <activity android:name="com.cqupt.SafeInsole.SafeActivity"></activity>
+        <activity android:name="com.cqupt.SafeInsole.FallActivity"></activity>
+        <activity android:name="com.cqupt.SafeInsole.SetActivity"></activity>
+        <activity android:name="com.cqupt.SafeInsole.HelpActivity"></activity>
+        <activity android:name="com.cqupt.SafeInsole.PageViewActivity"></activity>
     </application>
 
 </manifest>

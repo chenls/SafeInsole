@@ -13,7 +13,6 @@ import android.bluetooth.BluetoothGattDescriptor;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.BluetoothProfile;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -30,7 +29,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -104,8 +102,6 @@ public class MainActivity extends Activity implements
         super.onCreate(savedInstanceState);
 
         // 注册位置更新事件
-
-        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.activity_main);
         // getActionBar().setTitle(R.string.title_step);
         setProgressBarIndeterminate(true);
@@ -133,7 +129,7 @@ public class MainActivity extends Activity implements
         checking = (TextView) findViewById(R.id.text1);
         cancel = (Button) findViewById(R.id.cancelbutton);
         Warning = (ImageView) findViewById(R.id.warning);
-        Warning.setVisibility(0x00000004);
+        Warning.setVisibility(View.INVISIBLE);
         cancel.setVisibility(View.INVISIBLE);
 
         cancel.setOnClickListener(new OnClickListener() {
@@ -142,7 +138,7 @@ public class MainActivity extends Activity implements
                 cancel.setVisibility(View.GONE); // 隐藏
                 checking.setText(null);
                 TimeText.setText(null);
-                Warning.setVisibility(0x00000004);
+                Warning.setVisibility(View.INVISIBLE);
                 abc = true;
             }
         });
@@ -169,11 +165,14 @@ public class MainActivity extends Activity implements
         // 确保蓝牙可用 并且已经打开
         // 如未打开 显示 对话框
         if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
-            Intent enableBtIntent = new Intent(
-                    BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            // startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
-            startActivity(enableBtIntent);
-            finish();
+//            Intent enableBtIntent = new Intent(
+//                    BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//            // startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+//            startActivity(enableBtIntent);
+//            finish();
+
+            //开启蓝牙
+            mBluetoothAdapter.enable();
             return;
         }
         // 检查当前手机是否支持ble 蓝牙,如果不支持退出程序
@@ -340,6 +339,7 @@ public class MainActivity extends Activity implements
         private void setNotifySensor(BluetoothGatt gatt) {
             Log.d(TAG, "Set notify Char4");
             // 特征值得服务 特征值4
+            // 获取远程设备所支持的services
             characteristic = gatt.getService(SIMPLEPROFILE_SERVICE)
                     .getCharacteristic(SIMPLEPROFILE_CHAR4);
 
@@ -599,7 +599,7 @@ public class MainActivity extends Activity implements
                             Service.VIBRATOR_SERVICE);
                     mVibrator01.vibrate(new long[]{100, 10, 100, 1000}, -1);
                     checking.setText("\n" + millisUntilFinished / 1000 + "秒");
-                    Warning.setVisibility(0x00000000);
+                    Warning.setVisibility(View.VISIBLE);
                 }
             }
 

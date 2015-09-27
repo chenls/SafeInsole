@@ -2,12 +2,12 @@
 <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/tabhost"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <FrameLayout
             android:id="@android:id/tabcontent"
@@ -29,24 +29,24 @@
             android:layout_gravity="bottom"
             android:background="#4BD6F9"
             android:gravity="bottom"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <FrameLayout
                 android:layout_width="0.0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="1.0"
-                android:background="@null" >
+                android:background="@null">
 
                 <LinearLayout
                     android:id="@+id/main_layout_addExam"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:gravity="bottom|center" >
+                    android:gravity="bottom|center">
 
                     <RelativeLayout
                         android:id="@+id/main_tab_addExam"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/img_tab_addExam"
@@ -73,18 +73,18 @@
                 android:layout_width="0.0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="1.0"
-                android:background="@null" >
+                android:background="@null">
 
                 <LinearLayout
                     android:id="@+id/main_layout_myExam"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:gravity="bottom|center" >
+                    android:gravity="bottom|center">
 
                     <RelativeLayout
                         android:id="@+id/main_tab_myExam"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/img_tab_myExam"
@@ -111,18 +111,18 @@
                 android:layout_width="0.0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="1.0"
-                android:background="@null" >
+                android:background="@null">
 
                 <LinearLayout
                     android:id="@+id/main_layout_message"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:gravity="bottom|center" >
+                    android:gravity="bottom|center">
 
                     <RelativeLayout
                         android:id="@+id/main_tab_message"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/img_tab_message"
@@ -144,23 +144,23 @@
                     </RelativeLayout>
                 </LinearLayout>
             </FrameLayout>
-            
+
             <FrameLayout
                 android:layout_width="0.0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="1.0"
-                android:background="@null" >
+                android:background="@null">
 
                 <LinearLayout
                     android:id="@+id/main_layout_settings"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:gravity="bottom|center" >
+                    android:gravity="bottom|center">
 
                     <RelativeLayout
                         android:id="@+id/main_tab_settings"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/img_tab_settings"
@@ -182,22 +182,23 @@
                     </RelativeLayout>
                 </LinearLayout>
             </FrameLayout>
+
             <FrameLayout
                 android:layout_width="0.0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="1.0"
-                android:background="@null" >
+                android:background="@null">
 
                 <LinearLayout
                     android:id="@+id/main_layout_help"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:gravity="bottom|center" >
+                    android:gravity="bottom|center">
 
                     <RelativeLayout
                         android:id="@+id/main_tab_help"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/img_tab_help"
@@ -219,7 +220,7 @@
                     </RelativeLayout>
                 </LinearLayout>
             </FrameLayout>
-            
+
         </LinearLayout>
     </LinearLayout>
 

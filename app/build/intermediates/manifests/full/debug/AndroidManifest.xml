@@ -47,10 +47,8 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
-
-        <!-- android:theme="@android:style/Theme.Holo.Light" -->
-        <!-- Theme.Holo.Light -->
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
         <activity
             android:name="com.cqupt.SafeInsole.WelcomeActivity"
             android:label="@string/app_name"
@@ -63,39 +61,14 @@
         </activity>
         <activity
             android:name="com.cqupt.SafeInsole.Palygif1Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.MainActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.SuccinctHelpActitvty"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.SafeActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.FallActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.SetActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
-        <activity
-            android:name="com.cqupt.SafeInsole.HelpActivity"
-            android:label="@string/title_activity_add_exam"
-            android:theme="@style/title_bg" >
-        </activity>
+            android:screenOrientation="portrait" />
+        <activity android:name="com.cqupt.SafeInsole.MainActivity" />
+        <activity android:name="com.cqupt.SafeInsole.SuccinctHelpActitvty" />
+        <activity android:name="com.cqupt.SafeInsole.SafeActivity" />
+        <activity android:name="com.cqupt.SafeInsole.FallActivity" />
+        <activity android:name="com.cqupt.SafeInsole.SetActivity" />
+        <activity android:name="com.cqupt.SafeInsole.HelpActivity" />
+        <activity android:name="com.cqupt.SafeInsole.PageViewActivity" />
     </application>
 
 </manifest>
